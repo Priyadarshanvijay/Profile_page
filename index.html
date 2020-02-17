@@ -7,109 +7,154 @@
     <title>Semantic UI Sandbox</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="./css/my_stylesheet.css">
+    <style>
+        .ui.sticky {
+            width:100%;
+            top: 0;
+        }
+        .container{
+            margin-top: 100px;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="ui raised segment">
-        <img class="ui small image" src="https://res.cloudinary.com/webfast/image/fetch/f_auto,q_auto,w_auto,dpr_auto/https://www.talview.com/hs-fs/hubfs/Talview%20Logo_1.png?width=250&name=Talview%20Logo_1.png"></img>
-        <div class="ui bottom right attached basic green label">Hello User!</div>
+    <div class="ui fixed sticky raised segment">
+        <img class="ui small image"
+            src="https://res.cloudinary.com/webfast/image/fetch/f_auto,q_auto,w_auto,dpr_auto/https://www.talview.com/hs-fs/hubfs/Talview%20Logo_1.png?width=250&name=Talview%20Logo_1.png"></img>
+        <div class="ui bottom right attached  label inverted teal">Hello User!</div>
     </div>
-    </header>
     <div class="ui container">
         <div class="ui primary pointing orange menu">
             <a class="active item">
-              Home
+                Home
             </a>
             <a class="item">
-              Messages
+                Messages
             </a>
             <a class="item">
-              Settings
+                Settings
             </a>
             <div class="right menu">
-              <a class="ui item">
-                Logout
-              </a>
-            </div>
-        </div>
-        <div class = "ui row">
-        <div class="ui stackable grid">
-            <div class="ui column four wide">
-                <div class="ui card fluid">
-                    <div class="ui content">
-                        <img class="ui fluid image" src="./profilePhoto.jpeg">
-                    </div>
-                    <div class="ui content">
-                        <a class="header" href="#link">User name</a>
-                        <div class="meta">
-                        <a class="time">Last Seen Today</a>
-                        </div>
-                    </div>
-                    <div class="ui content">
-                        <div class="header">Top Skills</div>
-                        <br>
-                        <div class="ui basic green label">Make memes</div>
-                        <div class="ui basic blue label">Stonk Trading</div>
-                    </div>
-                    <div class = "content">
-                        <h4 class="header">Contact Details</h4>
-                        <div class="ui grid">
-                            <div class="ui column three wide">
-                                <div class="ui row"><i class="circular mobile icon"></i></div>
-                                <div class="ui row"><p class="fluid">Phone Number</p></div>
-                            </div>
-                            <div class="ui column three wide">
-                                <i class="circular at icon"></i>
-                            </div>
-                            <div class="ui column three wide">
-                                <i class="circular facebook icon"></i>
-                            </div>
-                            <div class="ui column three wide">
-                                <i class="circular linkedin icon"></i>
-                            </div>
-                            <div class="ui column three wide">
-                                <i class="circular github icon"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <button class = "ui primary tiny button">Send Job Posting in Mail</button>
-                    </div>
-                </div>
-            </div>
-            <div class="ui column twelve wide">
-                <div class = "ui row">
-                    <div class="ui inverted orange segment"><h3>Education History</h3></div>
-                    <div class="ui placeholder fluid">
-                        <div class="paragraph">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class = "ui row">
-                    <div class="ui inverted orange segment"><h3>Work History</h3></div>
-                    <div class="ui placeholder fluid">
-                        <div class="paragraph">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        </div>
-                    </div>
-                </div>
+                <a class="ui item">
+                    Logout
+                </a>
             </div>
         </div>
         <div class="ui row">
             <div class="ui stackable grid">
                 <div class="ui column four wide">
-                    <div class="ui segment">
-                        <p>More profiles like this</p>
+                    <div class="ui card fluid">
+                        <div class="ui content">
+                            <img class="ui fluid image" src="./profilePhoto.jpeg">
+                        </div>
+                        <div class="ui content">
+                            <a class="header" href="#link">User name</a>
+                            <div class="meta">
+                                <a class="time_since_last_seen">Last Seen Today</a><br>
+                                <a class="work_experience">Experience:- 3 Years</a>
+                            </div>
+                        </div>
+                        <div class="ui content">
+                            <div class="header">Top Skills</div>
+                            <br>
+                            <div class="ui basic green label">Make memes</div>
+                            <div class="ui basic blue label">Stonk Trading</div>
+                        </div>
+                        <div class="content">
+                            <h4 class="header">Contact Details</h4>
+                            <div class="ui grid">
+                                <div class="ui column three wide center">
+                                    <i class="circular mobile icon"></i>
+                                </div>
+                                <div class="ui column three wide">
+                                    <i class="circular at icon"></i>
+                                </div>
+                                <div class="ui column three wide">
+                                    <i class="circular facebook icon"></i>
+                                </div>
+                                <div class="ui column three wide">
+                                    <i class="circular linkedin icon"></i>
+                                </div>
+                                <div class="ui column three wide">
+                                    <i class="circular github icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <button class="ui primary button fluid">Send Job Posting in Mail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui column twelve wide">
+                    <div class="ui row">
+                        <div class="ui inverted orange segment">
+                            <h3>Education History</h3>
+                        </div>
+                        <div class="ui placeholder fluid">
+                            <div class="paragraph">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="ui row">
+                        <div class="ui inverted orange segment">
+                            <h3>Work History</h3>
+                        </div>
+                        <div class="ui placeholder fluid">
+                            <div class="paragraph">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="ui row">
+                        <div class="ui inverted orange segment">
+                            <h3>Projects</h3>
+                        </div>
+                        <div class="ui placeholder fluid">
+                            <div class="paragraph">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui row">
+                <div class="ui stackable grid">
+                    <div class="ui column four wide">
+                        <div class="ui segment">
+                            <p>More profiles like this</p>
+                            <div class="ui raised segment">
+                                <div class="ui placeholder fluid">
+                                    <div class="image header">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui raised segment">
+                                <div class="ui placeholder fluid">
+                                    <div class="image header">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
