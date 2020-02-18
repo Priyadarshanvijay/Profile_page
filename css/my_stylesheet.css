@@ -2,3 +2,15 @@ header {
     padding: 1%;
     padding-left: 2%;
 }
+.ui.sticky {
+    width: 100%;
+    top: 0;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+#bod{
+    align-self: center;
+}
